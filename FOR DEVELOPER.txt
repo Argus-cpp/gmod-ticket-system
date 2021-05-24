@@ -1,0 +1,17 @@
+FUNCTONS( CLIENTSIDE AND SERVERSIDE ):
+PLAYER:inAdminMode() -- return true, if player in admin-mode
+PLAYER:getTicketData() -- return ticket data
+PLAYER:getRateTable() -- return rate table
+PLAYER:getAcceptedTicket() -- return accepted ticket count
+PLAYER:getSkippedTicket() -- return skipped ticket count
+PLAYER:getTicketRating() -- return ticket rating, example 3.42
+
+FUNCTIONS( SERVERSIDE ):
+PLAYER:addTicketScore(amount) -- Add X ticket score to player
+PLAYER:addAcceptedTicket(amount) -- Add X accepted ticket score
+PLAYER:addSkippedTicket(amount) -- Add X skipped ticket score
+
+HOOK( SERVERSIDE ):
+hook.Add('canCreateTicket', 'test', function(ply, text)
+	return true -- return false for deny create ticket
+end)
