@@ -11,7 +11,7 @@ STS.mysql.db = {}
 STS.Config.language = "en"
 
 --[[-------------------------------------------------------------------------
-							MySQL config
+						MySQL config
 ---------------------------------------------------------------------------]]
 
 STS.mysql.EnableMySQL = false -- Set true to enable MySQL module
